@@ -10,19 +10,19 @@ function capfirst($word) {
   return $word;
 }
 
-function makeCoffee($type) {
-  if ($type == 'coffee') {
+function adventure($type) {
+  if ($type == 'surfing') {
     $valid = true;
-    $description = 'It&rsquo;s a bean juice that gives people energy; it becomes espresso in it&rsquo;s highly concetrated form.';
-  } else if ($type == 'latte') {
+    $description = 'It&rsquo;s an activity done on the waves. The sport of the coast.';
+  } else if ($type == 'skydiving') {
     $valid = true;
-    $description = 'A latte is a shortened version of the Italian word, caffè latte, which means milk coffee. Lattes contain a shot of espresso and steamed milk.';
-  } else if ($type == 'mocha') {
+    $description = 'An extreme sport, that only the sport that majority of people are too scared to do. Are you crazy enough to jump out of a plane?';
+  } else if ($type == 'deepseadiving') {
     $valid = true;
-    $description = 'Chocolate milk coffee, basically.';
-  } else if ($type == 'espresso') {
+    $description = 'Go deep into the depths of the oceans. Find fish nearly no man has ever seen. The oceans a lot deeper than you would think.';
+  } else if ($type == 'skateboarding') {
     $valid = true;
-    $description = 'Highly concentrated Italian coffee served in a single standard shot.';
+    $description = 'Dont have an ocean or an ariplaine? You just need a piece of wood and wheels and you can skateboard.';
   } else {
     $valid = false;
   };
@@ -43,7 +43,7 @@ function makeCoffee($type) {
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <p class="m-0"><strong>'.capfirst($type).'? Gross!</strong> Enter something good next time.</p>
+        <p class="m-0"><strong>'.capfirst($type).'? What?!?!?!</strong> Enter something thats fun next time.</p>
       </div>
     ');
   }
